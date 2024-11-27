@@ -238,7 +238,7 @@ def process(anno_name, cfg, skip_features=False):
     return player_id, data
 
 
-@hydra.main(version_base=None, config_path="../configs", config_name="audio_config")
+@hydra.main(version_base=None, config_path="../configs", config_name="etc")
 def main(cfg: DictConfig) -> None:
     random.seed(cfg.random_seed)
     np.random.seed(cfg.random_seed)
